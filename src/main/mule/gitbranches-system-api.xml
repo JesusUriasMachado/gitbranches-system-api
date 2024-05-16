@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="gitbranches-system-apiFlow" doc:id="7a9b5cd2-6807-4d9b-b063-1ebd297214a1" >
 		<http:listener doc:name="Listener" doc:id="5d7c32cd-b5df-4636-b6fd-57ffbb25041e" config-ref="HTTP_Listener_config" path="/api/car"/>
-		<http:request method="GET" doc:name="Request To Cars API" doc:id="ef92ceec-cef4-4027-9365-c904f0c03b0e" url="https://freetestapi.com/api/v1/cars/1"/>
+		<http:request method="GET" doc:name="Request To Cars API" doc:id="ef92ceec-cef4-4027-9365-c904f0c03b0e" url="https://freetestapi.com/api/v1/cats/1"/>
 		<ee:transform doc:name="Data Found" doc:id="5718daa7-d878-4a11-bfba-a0483292627b" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
